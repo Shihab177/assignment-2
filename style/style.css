@@ -20,7 +20,7 @@
 }
 .Navigation-item{
   margin: 0 auto;
-  width: 1160px;
+  max-width: 1160px;
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
@@ -94,6 +94,7 @@
   border: 1px solid red;
   margin: 0 auto;
   display: flex;
+  align-items: center;
 }
 .content{
   width: 100%;
@@ -134,6 +135,81 @@
 .b-img>img{
   width: 100%;
 }
+/* Standard Curriculum */
+.Standard-Curriculum{
+  width: 100%;
+  background-image: url('../assets/bg.png');
+  padding: 60px 0;
+  border: 1px solid green;
+}
+.section-h2{
+  color: black;
+  font-weight: bold;
+  font-size: 2.875rem;
+  text-align: center;
+}
+.card-contaner{
+  max-width: 1160px;
+  border: 1px solid green;
+  margin: 80px auto;
+  display: flex;
+  column-gap: 28.29px;
+  
+}
+.card-contaner>.card{
+  border: 1px solid red;
+  max-width: 367.8px;
+  padding: 53px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 18px;
+  background: linear-gradient(#DEF5FF,#FFFFFF);
+}
+.card-contaner>.card>h4{
+  color: #202020;
+  font-weight: bold;
+  font-size: 1.5325rem;
+  margin-top: 32px;
+}
+.card-contaner>.card>p{
+  color: #808080;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  margin: 33px 0;
+}
+.card-contaner>.card>span{
+  color:#64c8FF ;
+  font-size: 0.9375rem;
+  font-weight: bold;
+}
+#card2{
+  background: linear-gradient(#FFF4DC,#FFFFFF);
+}
+#card2>span{
+  color: #F0AA00;
+}
+#card3{
+  background: linear-gradient(#F2E8FF,#FFFFFF);
+}
+#card3>span{
+  color: #8700FF;
+}
+.less-getter-btn{
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+}
+.less-getter-btn>button{
+  width: 60px;
+  height: 60px;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 50%;
+  color: #FFFFFF;
+}
 
 @media screen and (max-width: 576px){
   .desktop-nav{
@@ -144,14 +220,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 12px 16px;
+    border-bottom: 1px solid var(--primary-color);
   }
   .mobile-nav>box-icon{
     width: 30px;
     height: 30px;
     cursor: pointer;
-  }
-  #menu-icon:hover {
-    color: blue;
   }
   .banner{
     width: calc(100% - 32px);
