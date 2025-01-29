@@ -455,13 +455,20 @@
     
   }
   .footer{
-    padding: 65px 0 60px 20px;
+    padding: 65px 0 60px 0;
   }
   .footer-conten{
     flex-direction: column;
   }
+  .k-logo{
+    margin-left:16px ;
+  }
   .kid-education>p{
     margin-bottom: 32px;
+    margin-left:21px ;
+  }
+  .about-school,.keep-in{
+    margin-left: 20px;
   }
   
   
