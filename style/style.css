@@ -82,8 +82,17 @@
 .btn:hover{
   background: var(--hover--color);
 }
+.marquee{
+  font-size: 30px;
+  font-weight: bold;
+}
 /* mobile navigation */
 .mobile-nav{
+  display: none;
+}
+.marquee-mobile{
+  font-size: 20px;
+  font-weight: bold;
   display: none;
 }
 /* banner section */
