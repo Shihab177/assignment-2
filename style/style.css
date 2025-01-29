@@ -24,7 +24,6 @@
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
   background: var(--white-color);
 
 }
@@ -90,7 +89,6 @@
 /* banner section */
 .banner{
   max-width: 1160px;
-  border: 1px solid red;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -139,7 +137,6 @@
   background-image: url('../assets/bg.png');
   background-size: cover;
   padding: 60px 0;
-  border: 1px solid green;
 }
 .section-h2{
   color: black;
@@ -149,14 +146,12 @@
 }
 .card-contaner{
   max-width: 1160px;
-  border: 1px solid green;
   margin: 80px auto;
   display: flex;
   column-gap: 28.29px;
   
 }
 .card-contaner>.card{
-  border: 1px solid red;
    /* max-width:367.8px;  */
   width: 100%;
   padding: 53px 40px;
@@ -166,7 +161,8 @@
   justify-content: center;
   text-align: center;
   border-radius: 18px;
-  background: linear-gradient(#DEF5FF,#FFFFFF);
+  border: 1px solid #DEF5FF;
+  background: linear-gradient(#DEF5FF ,#FFFFFF,#FFFFFF);
 }
 .card-contaner>.card>h4{
   color: #202020;
@@ -186,13 +182,15 @@
   font-weight: bold;
 }
 #card2{
-  background: linear-gradient(#FFF4DC,#FFFFFF);
+  border: 1px solid #FFF4DC;
+  background: linear-gradient(#FFF4DC,#FFFFFF,#FFFFFF);
 }
 #card2>span{
   color: #F0AA00;
 }
 #card3{
-  background: linear-gradient(#F2E8FF,#FFFFFF);
+  border: 1px solid #F2E8FF;
+  background: linear-gradient(#F2E8FF,#FFFFFF,#FFFFFF);
 }
 #card3>span{
   color: #8700FF;
@@ -212,21 +210,19 @@
 }
 /* our story */
 .our-story{
-  border: 1px solid black;
-  background:linear-gradient(#FFFFFF,rgba(254,163,1,0.3)), url(../assets/bg.png) ;
+  background:url(../assets/bg.png) ,linear-gradient(#FFFFFF,rgba(254,163,1,0.3)) ;
   background-size: cover;
-  text-align: center;
   padding: 60px 0;
+  
 }
 .story-card{
   max-width: 1160px;
-  border: 1px solid tomato;
   margin: 80px auto;
   display: flex;
   column-gap: 19.17px;
 }
 .story-1{
-  width: 540px;
+   max-width: 540px;
   position: relative;
   background: #FFFFFF;
   padding-bottom: 34.52px;
@@ -261,43 +257,50 @@
   margin: 47.93px 68.86px 0 38.35px;
 }
 .r-story{
-  max-width: 601px;
- display: grid;
- grid-template-columns: 1fr 1fr;
- column-gap: 19.17px;
- row-gap: 19.17px;
-}
-.story{
-  background: #FFFFFF;
-  border-radius: 16px;
-  position: relative;
-}
-.story>img{
-  border-radius: 16px 16px 0 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 19px;
+
 }
 
- .s2-btn,.s3-btn,.s4-btn,.s5-btn{
-  position: absolute;
-  padding: 15px 19px;
-  background:#95B226 ;
+.story{
+  max-width: 290px;
+  overflow: visible;
+  background: #FFFFFF;
+  padding-bottom:28px ;
+  border-radius: 16px;
+  
+}
+.story>div>img{
+  border-radius: 16px 16px 0 0;
+  } 
+  .s2-btn-div{
+    margin-top: -21px;
+    margin-left: 38px;
+  }
+.s2-btn{
+  z-index: 10;
+  padding: 9px 18px;
+  background: #95B226;
   border: none;
-  font-size: 15px;
+  display: inline-block;
   font-weight: 500;
+  font-size: 15px;
   border-radius: 47px;
   color: #FFFFFF;
-  top: 157.81px;
-  left: 38.35px;
-}
-.s3-btn{
-  background: #5D58F0;
 }
 .story>h5{
   color: #000000;
-  font-size: 15px;
   font-weight: bold;
-  margin: 43.12px 54.62px 33.55px 37.91px;
+  font-size: 15px;
+  margin: 38px 0 0 38px;
+  
 }
-.our-story>button{
+.story-btndiv{
+  text-align: center;
+}
+.story-btndiv>button{
   color: #FFFFFF;
   background: #000000;
   padding: 10px 61px;
@@ -305,7 +308,6 @@
   border: none;
   font-size: 20px;
   font-weight: bold;
-  text-align: center;
 }
 
 
@@ -334,7 +336,6 @@
     width: calc(100% - 20px);
     text-align: center;
     margin: 20px 10px;
-    border: 1px solid green;
   }
   .b-img{
     margin: 20px 10px 0 10px;
@@ -348,12 +349,54 @@
     row-gap: 12px;
     
   }
+  
   .section-h2{
     margin-top: 40px;
   }
   .less-getter-btn{
     display: none;
   }
+  .our-story{
+    padding: 40px 0;
+  }
+  #section-h2{
+    margin-top: 0;
+  }
+  .story-card{
+    padding: 20px 16px;
+    margin: 0 auto;
+  }
+  .story-1{
+    display: none;
+  }
+  .r-story{
+    width: 100%;
+  }
+  .story{
+    padding: 0;
+  }
+  .story>div>img{
+   width: 100%;
+    
+  }
+  .s2-btn-div{
+    margin-top: -20px;
+    margin-left: 22px;
+  }
+
+  .s2-btn{
+    padding: 6px 11px;
+    font-size: 9px;
+    font-weight: 400;
+  
+  }
+  .story>h5{
+    font-size: 9px;
+    font-weight: bold;
+    margin:11.42px 0 17px 22px ;
+    
+  }
+  
   
 }
 
