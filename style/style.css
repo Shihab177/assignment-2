@@ -309,6 +309,64 @@
   font-size: 20px;
   font-weight: bold;
 }
+/* Footer */
+.footer{
+  background:#01ACFD ;
+  padding: 123px 228px 174px 140px;
+}
+.footer-conten{
+  max-width: 1070px;
+  display: flex;
+}
+.kid-education{
+  max-width: 399px;
+  margin-right: 172px;
+}
+.kid-education>p{
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 35px 0 0 7px;
+}
+.k-logo{
+  display: flex;
+  column-gap: 0.34px;
+}
+.k-logo>h3{
+  font-weight: bold;
+  font-size: 42px;
+  color: #FFFFFF;
+
+}
+.about-school{
+  margin-right: 143px;
+ 
+}
+.about-school>h4{
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+}
+.school{
+  display: inline-block;
+}
+.about-school>p{
+  font-size: 20px;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+.keep-in>h5{
+  font-size: 26px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+}
+.social-icon{
+  display: flex;
+  column-gap: 10px;
+}
 
 
 @media screen and (max-width: 576px){
@@ -395,6 +453,15 @@
     font-weight: bold;
     margin:11.42px 0 17px 22px ;
     
+  }
+  .footer{
+    padding: 65px 0 60px 20px;
+  }
+  .footer-conten{
+    flex-direction: column;
+  }
+  .kid-education>p{
+    margin-bottom: 32px;
   }
   
   
