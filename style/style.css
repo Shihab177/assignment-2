@@ -217,12 +217,14 @@
   border-radius: 50%;
   color: #FFFFFF;
 }
+.less-getter-btn>button:hover{
+  background: var(--hover--color);
+}
 /* our story */
 .our-story{
   background:url(../assets/bg.png) ,linear-gradient(#FFFFFF,rgba(254,163,1,0.3)) ;
   background-size: cover;
   padding: 60px 0;
-  
 }
 .story-card{
   max-width: 1160px;
@@ -231,7 +233,7 @@
   column-gap: 19.17px;
 }
 .story-1{
-   max-width: 540px;
+   /* max-width: 540px; */
   position: relative;
   background: #FFFFFF;
   padding-bottom: 34.52px;
@@ -251,6 +253,9 @@
   font-weight: 500;
   border-radius: 47px;
   color: #FFFFFF;
+}
+.story-1>div>button:hover{
+  background: var(--hover--color);
 }
 .story-1>h3{
   margin-top: 58.63px;
@@ -272,14 +277,12 @@
   gap: 19px;
 
 }
-
 .story{
-  max-width: 290px;
+  /* max-width: 290px; */
   overflow: visible;
   background: #FFFFFF;
   padding-bottom:28px ;
   border-radius: 16px;
-  
 }
 .story>div>img{
   border-radius: 16px 16px 0 0;
@@ -299,15 +302,20 @@
   border-radius: 47px;
   color: #FFFFFF;
 }
+.s2-btn:hover{
+  background: var(--hover--color);
+}
 .story>h5{
   color: #000000;
   font-weight: bold;
   font-size: 15px;
   margin: 38px 0 0 38px;
-  
 }
 #story-3btn{
   background: #5D58F0;
+}
+#story-3btn:hover{
+  background: var(--hover--color);
 }
 .story-btndiv{
   text-align: center;
@@ -320,6 +328,9 @@
   border: none;
   font-size: 20px;
   font-weight: bold;
+}
+.story-btndiv>button:hover{
+  background: var(--hover--color);
 }
 /* Footer */
 .footer{
@@ -348,11 +359,9 @@
   font-weight: bold;
   font-size: 42px;
   color: #FFFFFF;
-
 }
 .about-school{
   margin-right: 143px;
- 
 }
 .about-school>h4{
   font-size: 24px;
@@ -379,7 +388,6 @@
   display: flex;
   column-gap: 10px;
 }
-
 
 @media screen and (max-width: 576px){
   .desktop-nav{
@@ -417,9 +425,7 @@
     flex-direction: column;
     margin: 20px 16.5px;
     row-gap: 12px;
-    
   }
-  
   .section-h2{
     margin-top: 40px;
   }
@@ -446,25 +452,21 @@
     padding: 0;
   }
   .story>div>img{
-   width: 100%;
-    
+   width: 100%; 
   }
   .s2-btn-div{
     margin-top: -20px;
     margin-left: 22px;
   }
-
   .s2-btn{
     padding: 6px 11px;
     font-size: 9px;
     font-weight: 400;
-  
   }
   .story>h5{
     font-size: 9px;
     font-weight: bold;
-    margin:11.42px 0 17px 22px ;
-    
+    margin:11.42px 0 17px 22px ; 
   }
   .footer{
     padding: 65px 0 60px 0;
@@ -482,7 +484,6 @@
   .about-school,.keep-in{
     margin-left: 20px;
   }
-  
   
 }
 
