@@ -406,9 +406,9 @@
     cursor: pointer;
   }
   .banner{
-    width: calc(100% - 32px);
+    width:100%;
     flex-direction: column-reverse;
-    margin: 8px 16px 0 16px;
+    margin: 8px 0px 0 0px;
   }
   .content{
     width: calc(100% - 20px);
@@ -417,6 +417,10 @@
   }
   .b-img{
     margin: 20px 10px 0 10px;
+  }
+  .b-img>img{
+    width: calc(100% - 20px);
+    margin: 0 10px;
   }
   .Standard-Curriculum{
     padding: 0;
